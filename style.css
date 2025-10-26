@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #1a1a2e;
+    color: #fff;
+    margin: 0;
+}
+header {
+    background: #00A2FF;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+#avatar-sketch {
+    text-align: center;
+    padding: 40px;
+}
+textarea {
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+    background: #333;
+    color: #fff;
+    border: 1px solid #00A2FF;
+}
+button {
+    background: #00B159;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: #008C45;
+}
+#status {
+    color: #00B159;
+    margin-top: 10px;
+}
